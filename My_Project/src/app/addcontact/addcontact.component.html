@@ -1,0 +1,98 @@
+<nav class="navbar navbar-expand" style="background-color: rgb(80, 148, 204);">
+    <div class="container-fluid">
+      <span class="navbar-text" style="font-weight: bolder;font-size: large; color: rgb(1, 1, 92);"><span class='glyphicon glyphicon-fire'></span> My Project</span>
+      <ul class="nav navbar-nav">
+        <li><a style="font-weight: bolder;font-size: small;" (click)="loadHome()">Home</a></li>
+        <li class="active"><a style="font-weight: bolder;font-size: small;">Add Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a style="font-weight: bolder;font-size: small;" (click)="logout()"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+  <br/>
+  <p-toast />
+<div class="container-fluid">
+<br/><br/>
+  <div class="row">
+    <div class="col-sm-6">
+      <h6>Add Contact</h6>
+    </div>
+  </div>
+  <br/>
+  <form>
+  <div class="row">
+    <div class="col-sm-3">
+      <label>First Name</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="firstName" [(ngModel)]="contact.firstName" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+    <div class="col-sm-3">
+      <label>Last Name</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="lastName" [(ngModel)]="contact.lastName" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+  </div><br/>
+  <div class="row">
+    <div class="col-sm-3">
+      <label>E Mail</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="email" [(ngModel)]="contact.email" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+    <div class="col-sm-3">
+      <label>Phone Number</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="phoneNumber" [(ngModel)]="contact.phoneNumber" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+  </div><br/>
+  <div class="row">
+    <div class="col-sm-3">
+      <label>Address</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="address" [(ngModel)]="contact.address" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+    <div class="col-sm-3">
+      <label>City</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="city" [(ngModel)]="contact.city" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+  </div><br/>
+  <div class="row">
+    <div class="col-sm-3">
+      <label>State</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="state" [(ngModel)]="contact.state" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+    <div class="col-sm-3">
+      <label>Country</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="country" [(ngModel)]="contact.country" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+  </div><br/>
+  <div class="row">
+    <div class="col-sm-3">
+      <label>Postal Code</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="postalCode" [(ngModel)]="contact.postalCode" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+  </div><br/>
+  <div class="row">
+    <div class="col-sm-3">
+      <button class="btn btn-success" (click)="addData()"><span class="glyphicon glyphicon-floppy-saved"></span> Save</button>
+    </div>
+  </div><br/>
+  </form>
+</div>
+  <br/>
+  <footer class="container-fluid text-center">
+    <p>© Copyright My Project 2024. All rights reserved.</p>
+  </footer>

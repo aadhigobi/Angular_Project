@@ -1,0 +1,95 @@
+<p-toast />
+<div class="container-fluid">
+<br/><br/>
+  <div class="row">
+    <div class="col-sm-3">
+      <h6>Edit or Delete Contact</h6>
+    </div>
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-3">
+      <button (click)="closeDialog()" class="btn btn-outline-danger"><span class="glyphicon glyphicon-remove-circle"></span> Close</button>
+    </div>
+  </div>
+  <br/>
+  <form>
+  <div class="row">
+    <div class="col-sm-3">
+      <label>First Name</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="firstName" [(ngModel)]="contact.firstName" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+    <div class="col-sm-3">
+      <label>Last Name</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="lastName" [(ngModel)]="contact.lastName" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+  </div><br/>
+  <div class="row">
+    <div class="col-sm-3">
+      <label>E Mail</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="email" [(ngModel)]="contact.email" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+    <div class="col-sm-3">
+      <label>Phone Number</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="phoneNumber" [(ngModel)]="contact.phoneNumber" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+  </div><br/>
+  <div class="row">
+    <div class="col-sm-3">
+      <label>Address</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="address" [(ngModel)]="contact.address" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+    <div class="col-sm-3">
+      <label>City</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="city" [(ngModel)]="contact.city" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+  </div><br/>
+  <div class="row">
+    <div class="col-sm-3">
+      <label>State</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="state" [(ngModel)]="contact.state" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+    <div class="col-sm-3">
+      <label>Country</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="country" [(ngModel)]="contact.country" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+  </div><br/>
+  <div class="row">
+    <div class="col-sm-3">
+      <label>Postal Code</label>
+    </div>
+    <div class="col-sm-3">
+      <input type="text" id="postalCode" [(ngModel)]="contact.postalCode" [ngModelOptions]="{standalone: true}" class="form-control" />
+    </div>
+  </div><br/>
+  <div class="row">
+    <div class="col-sm-3">
+      <button class="btn btn-success" (click)="updateData()"><span class="glyphicon glyphicon-floppy-saved"></span> Update</button>
+    </div>
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-3">
+      <button class="btn btn-danger" (click)="deleteData()"><span class="glyphicon glyphicon-floppy-remove"></span> Delete</button>
+    </div>
+  </div><br/>
+  </form>
+</div>

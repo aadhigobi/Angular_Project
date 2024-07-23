@@ -1,0 +1,22 @@
+<br/><br/><br/><br/><br/><br/>
+<div class="card text-center border-primary mb-3" style="width: 30rem;">
+    <div class="card-header">
+        <img src="login_img.gif" style="width: 150px; height: 180px;"/>
+    </div>
+    <div class="card-body">
+        <form [formGroup]="loginForm">
+        <div class="input-group">
+            <span class="input-group-addon" style="padding-right: 25px;"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="userName" type="text" class="form-control" formControlName="userName" placeholder="Username">
+        </div>
+        <br/>
+        <div class="input-group">
+            <span class="input-group-addon" style="padding-right: 25px;"><i class="glyphicon glyphicon-lock"></i></span>
+            <input id="passWord" type="password" class="form-control" formControlName="passWord" placeholder="Password">
+        </div>
+        </form>
+    </div>
+    <div class="card-footer">
+        <button type="button" class="btn btn-primary" (click)="onSubmit()"><i class="glyphicon glyphicon-log-in"></i>&nbsp;&nbsp;&nbsp; Log In</button>
+    </div>
+  </div>
